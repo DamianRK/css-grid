@@ -1,4 +1,4 @@
-CSS responsive grid system
+CSS responsive grid system with Flexbox
 ==================================
 
 ## Description
@@ -9,11 +9,11 @@ Grid system has 12 columns. No matter the size of the browser, each of these col
 ## Example
 
     <div class="row">
-        <div class="col s-12">This div is 12-columns wide .s-12</div>
-        <div class="col xs-12 s-6 m-3">.xs-12 .s-6 .m-3</div>
-        <div class="col xs-12 s-6 m-3">.xs-12 .s-6 .m-3</div>
-        <div class="col s-6 m-3">.s-6 .m-3</div>
-        <div class="col s-6 m-3">.s-6 .m-3</div>
+        <div class="column s-12">This div is 12-columns wide .s-12</div>
+        <div class="column xs-12 s-6 m-3">.xs-12 .s-6 .m-3</div>
+        <div class="column xs-12 s-6 m-3">.xs-12 .s-6 .m-3</div>
+        <div class="column s-6 m-3">.s-6 .m-3</div>
+        <div class="column s-6 m-3">.s-6 .m-3</div>
     </div>
 
 
