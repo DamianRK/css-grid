@@ -2,11 +2,17 @@
 // Variables
 // ================================================
 
-$num-cols:     12 !default;
-$space-width:  1rem !default;
+$num-cols:      12 !default;
+$space-width:   1rem !default;
+
+$bp-xs:         479px !default;
+$bp-s:          599px !default;
+$bp-m:          770px !default;
+$bp-l:          980px !default;
+$bp-xl:         1280px !default;
 
 //====================================================
-//  Grid Componets
+//  Grid Components
 //====================================================
 
 .column {
@@ -30,18 +36,8 @@ $space-width:  1rem !default;
 // ================================================
 
 .row {
-
-    // Clear floating children
-    &:after {
-        content: "";
-        display: table;
-        clear: both;
-    }
-
     .column {
-        float: left;
         box-sizing: border-box;
-        padding: 0 $space-width / 2;
 
         $i: 1;
         @while $i <= $num-cols {
@@ -55,7 +51,7 @@ $space-width:  1rem !default;
             $i: $i + 1;
         }
 
-        @media only screen and (max-width: 479px) {
+        @media only screen and (max-width: $bp-xs) {
             $i: 1;
             @while $i <= $num-cols {
                 $perc: percentage($i / $num-cols );
@@ -69,7 +65,7 @@ $space-width:  1rem !default;
             }
         }
 
-        @media only screen and (min-width: 770px) {
+        @media only screen and (min-width: $bp-m) {
             $i: 1;
             @while $i <= $num-cols {
                 $perc: percentage($i / $num-cols );
@@ -83,7 +79,7 @@ $space-width:  1rem !default;
             }
         }
 
-        @media only screen and (min-width: 980px) {
+        @media only screen and (min-width: $bp-l) {
 
             $i: 1;
             @while $i <= $num-cols {
@@ -99,5 +95,3 @@ $space-width:  1rem !default;
         }
     }
 }
-
-
