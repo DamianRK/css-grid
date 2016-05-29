@@ -26,6 +26,10 @@ Requires:
 ![Alt text](/test/img/grid.001.png "Grid system")
 
 
+## Installation
+
+    bower install css-grid-flex
+
 ## Author
 
 Karol Parfienczyk <parfienczyk@gmail.com>

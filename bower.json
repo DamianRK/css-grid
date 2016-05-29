@@ -1,0 +1,20 @@
+{
+  "name": "css-grid",
+  "version": "1.0.0",
+  "homepage": "https://github.com/DamianRK/css-grid",
+  "authors": [
+    "Damian B <damian@websolutionsnyc.com>"
+  ],
+  "description": "CSS: Flexbox RWD Grid",
+  "main": "",
+  "moduleType": [],
+  "license": "MIT",
+  "private": true,
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ]
+}
