@@ -5,6 +5,12 @@ CSS responsive grid system with Flexbox
 
 Grid system has 12 columns. No matter the size of the browser, each of these columns will always have an equal width.
 
+## Requirements
+
+Working perfectly with: https://github.com/DamianRK/magento-gulp-sass
+Requires:
+* bp() mixin
+* $bp-xsmall, $bp-small, $bp-medium, $bp-large, $bp-xlarge variables
 
 ## Example
 

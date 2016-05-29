@@ -5,12 +5,6 @@
 $num-cols:      12 !default;
 $space-width:   1rem !default;
 
-$bp-xs:         479px !default;
-$bp-s:          599px !default;
-$bp-m:          770px !default;
-$bp-l:          980px !default;
-$bp-xl:         1280px !default;
-
 //====================================================
 //  Grid Components
 //====================================================
@@ -51,7 +45,7 @@ $bp-xl:         1280px !default;
             $i: $i + 1;
         }
 
-        @media only screen and (max-width: $bp-xs) {
+        @include bp(max-width, $bp-xsmall) {
             $i: 1;
             @while $i <= $num-cols {
                 $perc: percentage($i / $num-cols );
@@ -65,7 +59,7 @@ $bp-xl:         1280px !default;
             }
         }
 
-        @media only screen and (min-width: $bp-m) {
+        @include bp(min-width, $bp-medium + 1) {
             $i: 1;
             @while $i <= $num-cols {
                 $perc: percentage($i / $num-cols );
@@ -79,7 +73,7 @@ $bp-xl:         1280px !default;
             }
         }
 
-        @media only screen and (min-width: $bp-l) {
+        @include bp(min-width, $bp-large + 1) {
 
             $i: 1;
             @while $i <= $num-cols {
